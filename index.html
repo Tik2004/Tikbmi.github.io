@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open Sans" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <script src="script.js"></script>
+  <title>Quiz App</title>
+</head>
+<body>
+  <div id="main">
+    <div id="name">
+      <h1>BMI Calculator By Tigran Arshakyan</h1>
+    </div>
+    <form action="" > 
+      <h1 class="your">Ваш Вес (Килограммы)</h1>
+      <div class="slider-weight">
+      <a class="ui-slider-handle" href="#">
+      <div id="slider-weight-result">0</div> 
+      </a>
+       
+      <input id="znch-weight" name="znch-weight" type="hidden" />
+      </div>
+
+      <h1 style="margin-top: 4rem;" class="your">Ваш Рост (Метры)</h1>
+      <div class="slider-height">
+        <a class="ui-slider-handle" href="#">
+        <div id="slider-height-result">0</div> 
+        </a>
+         
+        <input id="znch-height" name="znch-height" type="hidden" />
+      </div>
+      <input id="btn-Check" type= "submit" value= "Посчитать"> 
+    </form>
+
+    <div id="card-result">
+      <h1>Твой результат</h1>
+      <h2></h2>
+    </div>
+
+    <table class="centered highlight responsive-table">
+      <thead>
+        <tr>
+            <th>Индекс Массы Тела</th>
+            <th>Соответствие между массой человека и его ростом</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>16 и менее</td>
+            <td>Выраженный дефицит массы тела</td>
+        </tr>
+        <tr>
+            <td>16-18.5</td>
+            <td>Небольшой дефицит массы тела</td>
+        </tr>
+        <tr>
+            <td>18.5-24.99</td>
+            <td>Абсолютная Норма</td>
+        </tr>
+        <tr>
+            <td>25-30</td>
+            <td>Небольшая полнота</td>
+        </tr>
+        <tr>
+            <td>30-35</td>
+            <td>Полнота побольше (Ожирение 1 степени)</td>
+        </tr>
+        <tr>
+            <td>35-40</td>
+            <td>Полнота еще больше (Ожирение 2 степени)</td>
+        </tr>
+        <tr>
+            <td>40+</td>
+            <td>Толстота, да Жирость (Ожирение 3 степени)</td>
+        </tr> 
+        <tbody>
+    </table>
+  </div>
+</body>
+</html>
